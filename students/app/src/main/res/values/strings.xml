@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Students</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="vito_ninja">vito@ninja</string>
+    <string name="_12345">12345</string>
+    <string name="bio">elit. Aliquam ut elit finibus, interdum felis ac, pretium ex. In ac condimentum tortor. Donec at posuere enim. Donec sit amet blandit est, ac venenatis neque. Phasellus ut imperdiet lacus, nec facilisis ante. Phasellus non ultricies nisi, at faucibus ante. Cras mauris turpis, congue a malesuada tristique, hendrerit quis lorem. Phasellus luctus semper magna ac fermentum. Suspendisse dolor dui, consectetur sed tincidunt eget, efficitur id dolor. Vestibulum id ante erat. Vestibulum malesuada eu lorem et molestie.</string>
+    <string name="biography">Biography</string>
+    <string name="duration">Duration: </string>
+    <string name="no_of_class">No. of class</string>
+    <string name="fee">Fee:</string>
+    <string name="website">Website:</string>
+    <string name="class_days">Class Days: </string>
+    <string name="class_duration">Class duration</string>
+    <string name="proceed_to_login">Proceed to login</string>
+</resources>

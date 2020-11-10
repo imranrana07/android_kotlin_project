@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Material Assignment</string>
+    <string name="static_random_image">Static Random Image</string>
+    <string name="get_the_same_random_image_every_time_based_on_a_seed">Get the same random image every time based on a seed</string>
+    <string name="countries">countries</string>
+    <string-array name="countries">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+
+    </string-array>
+</resources>

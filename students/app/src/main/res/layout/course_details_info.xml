@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/dp_10">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextAppearance.AppCompat.Title"
+        tools:text="Android App Development basic course"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_courseDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_courseName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/duration"
+        android:textSize="@dimen/sp_18"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_courseDurationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_courseName"
+        app:layout_constraintStart_toEndOf="@id/tv_courseDuration"
+        tools:text="6 month"
+        android:layout_marginStart="@dimen/dp_5"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_courseDuration"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_classDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_courseDurationValue"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/class_duration"
+        android:textSize="@dimen/sp_18"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_classDurationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_courseDurationValue"
+        app:layout_constraintStart_toEndOf="@id/tv_classDuration"
+        tools:text="2 hours"
+        android:layout_marginStart="@dimen/dp_5"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_classDuration"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_noOfClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_classDurationValue"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/no_of_class"
+        android:textSize="@dimen/sp_18"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_noOfClassValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_classDurationValue"
+        app:layout_constraintStart_toEndOf="@id/tv_noOfClass"
+        tools:text="24"
+        android:layout_marginStart="@dimen/dp_5"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_noOfClass"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_noOfClass"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/fee"
+        android:textSize="@dimen/sp_18"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_feeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_noOfClass"
+        app:layout_constraintStart_toEndOf="@id/tv_fee"
+        tools:text="15000 bdt"
+        android:layout_marginStart="@dimen/dp_5"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_fee"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_fee"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/website"
+        android:textSize="@dimen/sp_18"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_websiteValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_fee"
+        app:layout_constraintStart_toEndOf="@id/tv_website"
+        tools:text="https://hellohasan.com/android-course-bangladesh/"
+        android:layout_marginStart="@dimen/dp_5"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_website"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:autoLink="web"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_classDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_websiteValue"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/class_days"
+        android:textSize="@dimen/sp_18"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewClassDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_classDays"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_start">20dp</dimen>
+    <dimen name="margin_end">20dp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_top_by_half">10dp</dimen>
+    <dimen name="margin_top_by_quarter">5dp</dimen>
+    <dimen name="txt_title_size">28sp</dimen>
+    <dimen name="txt_sub_title_size">20sp</dimen>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.student_details.view.StudentDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/tool_bar"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_student"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include"
+        app:layout_constraintHeight_percent=".3"
+        tools:src="@drawable/sample_image"
+        android:scaleType="fitXY"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_student"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        tools:text="s m imran ahmed"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_institution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_studentName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        tools:text="Stamford University"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_institution"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        tools:text="123123123"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_studentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_mobile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        tools:text="imranrana07@gmail.com"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_studentBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_studentEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/biography"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_studentBioCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_studentEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@drawable/btn_content_copy"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_studentBioValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_studentBioCopy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        tools:text="@string/bio"
+        android:justificationMode="inter_word"
+        android:textSize="@dimen/sp_18"
+        tools:targetApi="o"
+        android:paddingEnd="@dimen/dp_10"
+        tools:ignore="RtlSymmetry"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/teal_700"
+        android:layout_marginBottom="@dimen/dp_20"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

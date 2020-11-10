@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/dp_5"
+    android:elevation="@dimen/dp_5"
+    android:clipToPadding="true"
+    tools:targetApi="lollipop"
+    android:layout_margin="@dimen/dp_10">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_food"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fitsSystemWindows="true"
+            app:layout_constraintHeight_percent=".8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/test_image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/magenta"
+            android:padding="@dimen/dp_10"
+            tools:text="10% off"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_discount"
+            app:layout_constraintTop_toBottomOf="@id/iv_food"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            style="@style/TextAppearance.AppCompat.Title"
+            tools:text="Margherita with cheese"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_foodDiscountPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_discount"
+            app:layout_constraintTop_toBottomOf="@id/tv_foodName"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textColor="@color/material500"
+            tools:text="140tk"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_foodOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_foodDiscountPrice"
+            app:layout_constraintTop_toBottomOf="@id/tv_foodName"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textColor="@color/material500"
+            tools:text="150tk"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_foodIsFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_foodName"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:src="@drawable/favorite_24"
+            tools:src="@drawable/favorite_24"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_foodIsNotFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_foodName"
+            android:layout_marginStart="@dimen/dp_10"
+            android:src="@drawable/icon_fav"
+            android:layout_marginEnd="@dimen/dp_10"
+            tools:src="@drawable/icon_fav"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

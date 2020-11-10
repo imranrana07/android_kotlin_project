@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FoodOrder</string>
+    <string name="discountedPrice">%d % off</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="@dimen/margin_start"
+    android:layout_marginEnd="@dimen/margin_end"
+    android:layout_marginTop="@dimen/margin_top"
+    android:elevation="5dp"
+    tools:targetApi="lollipop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent=".65"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/imgView"
+            app:layout_constraintTop_toBottomOf="@id/imgView"
+            android:textSize="@dimen/txt_title_size"
+            tools:text="Title"
+            android:layout_marginTop="@dimen/margin_top_by_half"
+            android:text="@string/static_random_image"
+            android:layout_marginStart="@dimen/margin_top_by_half"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/imgView"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:textSize="@dimen/txt_sub_title_size"
+            tools:text="Title"
+            android:layout_marginTop="@dimen/margin_top_by_quarter"
+            android:text="@string/get_the_same_random_image_every_time_based_on_a_seed"
+            android:layout_marginStart="@dimen/margin_top_by_half"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
