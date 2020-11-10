@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FirstClass</string>
+    <string name="name">Name: </string>
+    <string name="micheal_holding">Micheal holding</string>
+    <string name="phone_no">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="imranrana07_gmail_com">imranrana07@gmail.com</string>
+    <string name="_01671_72">01671****72</string>
+    <string name="say_hi">Say Hi!</string>
+    <string name="your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="weight">Weight</string>
+    <string name="submit">Submit</string>
+    <string name="dot_text">.\n .\n.\n.\n.\n.\n .\n.\n.\n.\n.\n .\n.\n.\n.\n.\n .\n.\n.\n.\n.\n .\n.\n.\n.\n.\n .\n.\n.\n.\n</string>
+</resources>

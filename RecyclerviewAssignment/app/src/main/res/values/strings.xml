@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecyclerviewAssignment</string>
+    <string name="title_homePage">RecyclerView</string>
+    <string name="district">District: </string>
+    <string name="chief">Chief:</string>
+    <string name="chiefVal">Mr. X</string>
+    <string name="campus_chief">Campus Chief</string>
+    <string name="contact_no">Contact No.</string>
+</resources>

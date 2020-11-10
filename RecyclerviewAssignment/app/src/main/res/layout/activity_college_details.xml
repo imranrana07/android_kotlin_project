@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CollegeDetailsActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/toolbar"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_college_cda"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fitsSystemWindows="true"
+            app:layout_constraintHeight_percent=".8"
+            android:src="@drawable/image"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_chiefTitle_cda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_college_cda"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/chief"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mc_chief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_chiefTitle_cda"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top"
+            android:elevation="5dp"
+            app:cardUseCompatPadding="true"
+            tools:ignore="UnusedAttribute">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_chief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_chiefTitle_cda"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                android:padding="@dimen/paddingBy10"
+                android:background="@color/colorCardView"
+                android:elevation="30dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_chief_cda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/cl_chief"
+                    app:layout_constraintTop_toTopOf="@id/cl_chief"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:text="@string/campus_chief"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_chiefName_cda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/tv_chief_cda"
+                    app:layout_constraintTop_toTopOf="@id/cl_chief"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginStart="@dimen/margin_start"
+                    tools:text="Rishi K.C."/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_chiefPhoneNo_cda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/cl_chief"
+                    app:layout_constraintTop_toBottomOf="@id/tv_chiefName_cda"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:text="@string/contact_no"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_chiefPhoneNoValue_cda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/tv_chief_cda"
+                    app:layout_constraintTop_toBottomOf="@id/tv_chiefName_cda"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginStart="@dimen/margin_start"
+                    tools:text="918218247"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

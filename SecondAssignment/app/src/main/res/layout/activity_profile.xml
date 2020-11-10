@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProfileActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_onlineImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent=".35"
+            app:layout_constraintWidth_percent=".5"
+            android:src="@drawable/flower"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/topMargin"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_onlineImage"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:text="@string/name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_nameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/img_onlineImage"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            tools:text = "imran"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/phone"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phoneValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/phone"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/email"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_emailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/email"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_passwordValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tv_passwordValueShowHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_passwordValue"
+            app:layout_constraintTop_toTopOf="@id/tv_passwordValue"
+            app:layout_constraintBottom_toBottomOf="@id/tv_passwordValue"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:src="@drawable/eye" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/website"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_websiteValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/website"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_websiteValue"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/age"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ageValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_websiteValue"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:hint="@string/age"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ageValue"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/weight"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_weightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_ageValue"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/weight"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_weightValue"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/gender"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_genderValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_weightValue"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/gender"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_genderValue"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/notification"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_notificationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_notification"
+            app:layout_constraintTop_toBottomOf="@id/tv_genderValue"
+            android:layout_marginStart="@dimen/standardMarginHalf"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topQuarterMargin"
+            android:text="@string/enabled"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_notificationValue"
+            android:layout_marginStart="@dimen/startMargin"
+            android:layout_marginEnd="@dimen/endMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:text="@string/logout"
+            android:textAllCaps="false"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

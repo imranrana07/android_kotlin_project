@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyBlog</string>
+    <string name="sample">Are you still using the same legacy design support library? No problem this is the right time to migrate from legacy library to Google’s new Material Design library.</string>
+</resources>

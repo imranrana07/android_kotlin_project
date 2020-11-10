@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="true"
+    android:elevation="@dimen/dp_5"
+    tools:targetApi="lollipop"
+    android:layout_marginStart="@dimen/dp_10"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    app:cardCornerRadius="@dimen/dp_5"
+    app:strokeWidth="2dp"
+    app:strokeColor="#EDF4F4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_10">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_post"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent=".791"
+        tools:src= "@drawable/sample_image"
+        android:fitsSystemWindows="true"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_post"
+        tools:text="শাওয়ালের ৬টি রোযার ফজিলত"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/black"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_postAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_postTitle"
+            tools:text="Hasan Abdullah"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textColor="#100C50"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_postDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_postAuthor"
+            app:layout_constraintTop_toBottomOf="@id/tv_postTitle"
+            tools:text="30 May, 2020"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textColor="@color/purple_500"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

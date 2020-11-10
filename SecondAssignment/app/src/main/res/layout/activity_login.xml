@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/flower"
+        app:layout_constraintEnd_toStartOf="@id/guideLineHorizontal"
+        app:layout_constraintHeight_percent=".3"
+        app:layout_constraintStart_toStartOf="@id/guideLineHorizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideLineVertical"
+        app:layout_constraintWidth_percent=".5"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        android:layout_marginTop="@dimen/topMargin"
+        android:layout_marginStart="@dimen/startMargin"
+        android:layout_marginEnd="@dimen/endMargin"
+        android:hint="@string/enter_email"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        android:layout_marginTop="@dimen/topQuarterMargin"
+        android:layout_marginStart="@dimen/startMargin"
+        android:layout_marginEnd="@dimen/endMargin"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintEnd_toEndOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        android:layout_marginTop="@dimen/topMargin"
+        android:text="@string/login"
+        android:textAllCaps="false"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintEnd_toEndOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        android:layout_marginTop="@dimen/topQuarterMargin"
+        android:text="@string/no_account"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_vertical"
+        app:layout_constraintBaseline_toBaselineOf="@id/btn_register"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_register"
+        app:layout_constraintEnd_toEndOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        android:layout_marginTop="@dimen/topQuarterMargin"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/topQuarterMargin"
+        android:textSize="16sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

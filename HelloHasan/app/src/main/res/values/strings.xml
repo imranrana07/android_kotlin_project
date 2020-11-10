@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloHasan</string>
+    <string name="slash">/</string>
+    <string name="comment_show">comment show</string>
+    <string name="feedback">Feedback</string>
+    <string name="reply">Reply</string>
+
+</resources>

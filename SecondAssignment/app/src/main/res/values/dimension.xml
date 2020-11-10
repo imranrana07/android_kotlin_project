@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standardMargin">16dp</dimen>
+    <dimen name="standardMarginHalf">8dp</dimen>
+    <dimen name="standardMarginQuarter">4dp</dimen>
+    <dimen name="startMargin">30dp</dimen>
+    <dimen name="endMargin">30dp</dimen>
+    <dimen name="topMargin">30dp</dimen>
+    <dimen name="topQuarterMargin">10dp</dimen>
+    <dimen name="topHalfMargin">10dp</dimen>
+    <dimen name="bottomMargin">30dp</dimen>
+</resources>

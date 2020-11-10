@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="@dimen/dp_5"
+    android:clipToPadding="true"
+    tools:ignore="UnusedAttribute"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/rectangle_background"
+    android:padding="@dimen/dp_1"
+    app:cardCornerRadius="@dimen/dp_5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            tools:text = "@string/sample"
+            android:textColor="@color/text_color"
+            android:gravity="start"
+            android:justificationMode="inter_word"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_postViewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_post"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:drawableStart="@drawable/eye"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            tools:text = "10"
+            android:textColor="@color/text_color"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_post"
+            app:layout_constraintStart_toEndOf="@id/tv_postViewCount"
+            app:layout_constraintEnd_toStartOf="@id/tv_phone"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            tools:text = "imranrana07@gmail.com"
+            android:textColor="@color/text_color"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_post"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            tools:text = "01671152472"
+            android:textColor="@color/text_color"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

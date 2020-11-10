@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="@dimen/margin_5dp"
+    tools:ignore="UnusedAttribute"
+    android:layout_marginBottom="@dimen/margin_5dp"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:layout_marginEnd="@dimen/margin_start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent=".8"
+            app:layout_constraintWidth_percent=".5"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_collegeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_top"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginStart="@dimen/margin_start"
+            tools:text="Abc style"/>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/tv_collegeName"
+            android:layout_marginStart="@dimen/margin_start"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:progressTint="#875"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/rating"
+            android:layout_marginStart="@dimen/margin_start"
+            android:text="@string/district"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_districtValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_district"
+            app:layout_constraintTop_toBottomOf="@id/rating"
+            android:layout_marginStart="@dimen/margin_start"
+            tools:text="Value"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_chief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/tv_district"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_txt"
+            android:text="@string/chief"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_chiefValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_district"
+            app:layout_constraintTop_toBottomOf="@id/tv_district"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_txt"
+            tools:text="Value"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tv_emailIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_txt"
+            android:src="@drawable/email"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_emailIcon"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_txt"
+            tools:text="imranrana07@gmail.com"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tv_phoneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_email"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_txt"
+            android:src="@drawable/phone"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tv_phoneIcon"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_txt"
+            tools:text="01671152472"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

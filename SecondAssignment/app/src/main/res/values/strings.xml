@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Second Assignment</string>
+    <string name="login">Login</string>
+    <string name="no_account">No account?</string>
+    <string name="register">Register</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="website">website</string>
+    <string name="logout">Logout</string>
+    <string name="update_password">Update password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="submit">submit</string>
+    <string name="age">age</string>
+    <string name="weight">Weight</string>
+    <string name="image_url">Image Url</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="notification_enabled">Notification enabled</string>
+    <string name="notification">Notification</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+</resources>
