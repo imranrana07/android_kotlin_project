@@ -38,6 +38,11 @@ class StudentDetailsActivity : BaseActivity(),StudentDetailsView {
         }
     }
 
+    override fun onPause() {
+        super.onPause()
+
+    }
+
     override fun progressBar(visibility: Int) {
         progressBar.visibility = visibility
     }

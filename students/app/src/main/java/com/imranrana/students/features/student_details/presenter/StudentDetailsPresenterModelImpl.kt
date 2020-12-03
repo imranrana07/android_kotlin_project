@@ -13,6 +13,7 @@ class StudentDetailsPresenterModelImpl(
         private val token: String
 ): StudentDetailsPresenterModel {
     private val studentDetailModelImpl = StudentDetailModelImpl()
+
     override fun getStudentDetails(studentDetailsView: StudentDetailsView) {
         studentDetailsView.progressBar(Utils.VISIBLE)
         studentDetailModelImpl.getDetails(studentId, token, object : ApiResponseCallback <StudentDetails>{
